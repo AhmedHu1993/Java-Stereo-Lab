@@ -27,4 +27,9 @@ public class ExternalPlayerTest {
     public void externalPlayerInstruction(){
         assertEquals("Adjust the output volume", mobilePhone.instructions());
     }
+
+    @Test
+    public void externalPlayerConnection(){
+        assertEquals("connect via 3.5mm jack", mobilePhone.connect());
+    }
 }

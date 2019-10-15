@@ -1,4 +1,4 @@
-public class ExternalPlayer extends Component {
+public class ExternalPlayer extends Component implements IConnect {
 
     private ExternalPlayerTypes type;
 
@@ -17,5 +17,9 @@ public class ExternalPlayer extends Component {
 
     public ExternalPlayerTypes getType() {
         return this.type;
+    }
+
+    public String connect(){
+        return "connect via 3.5mm jack";
     }
 }
