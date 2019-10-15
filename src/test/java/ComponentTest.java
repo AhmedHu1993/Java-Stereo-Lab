@@ -1,12 +1,14 @@
-import org.junit.Before;
+import org.junit.Test;
 
-import javax.management.MXBean;
+import static org.junit.Assert.assertEquals;
 
 public class ComponentTest {
 
     Component component;
 
-    @Before
-    public void before(){
+    @Test
+    public void testComponentAsARadio(){
+        component = new Radio();
+        assertEquals("Sony", component.getManufacturer());
     }
 }

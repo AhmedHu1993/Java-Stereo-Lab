@@ -31,4 +31,9 @@ public class RadioTest {
     public void testRadioControl(){
         assertEquals("Select Station", radio.control());
     }
+
+    @Test
+    public void testRadioConnection(){
+        assertEquals("connect via DIN", radio.connect());
+    }
 }

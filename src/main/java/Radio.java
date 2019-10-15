@@ -1,4 +1,4 @@
-public class Radio extends Component {
+public class Radio extends Component implements IConnect {
 
 
     public Radio(){
@@ -15,5 +15,9 @@ public class Radio extends Component {
 
     public String tune(String name){
         return "tuned to " + name;
+    }
+
+    public String connect(){
+        return "connect via DIN";
     }
 }
